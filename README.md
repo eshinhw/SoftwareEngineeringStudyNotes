@@ -2,7 +2,7 @@
 
 Below contents are basic concepts of Kotlin and Android App Development in Android Studio created by [Philipp Lackner](https://www.youtube.com/channel/UCKNTZMRHPLXfqlbdOI7mCkg) on YouTube. You can find the full video series [here](https://youtube.com/playlist?list=PLQkwcJG4YTCTq1raTb5iMuxnEB06J1VHX).
 
-## 1. Activities and Lifecycle
+## Activities and Lifecycle
 
 Activity in Android is simple Kotlin Class.
     Each activity can be represented by a Kotlin class.
@@ -42,3 +42,20 @@ Android uses an activity stack to manage multiple activities running at the same
 </p>
 
 There are different kinds of lifecycle functions in Android with different purposes.
+
+## Solving Errors in Android Studio using Logcat
+
+#### Types of Log Messages
+
+- **Verbose (Log.v)**: show all log messages
+- **Debug (Log.d)**: shows all log messages related to Debug and everything else below (Info, Warn, Error and Assert)
+- **Info (Log.i)**: shows all log messages related to Info and everything else below (Warn, Error, and Assert)
+- In similar manner, we can select which types of log messages we want to display on Logcat.
+- We can search log messages by tags to just display what we want.
+
+#### What We Look For in Logcat
+
+- From Logcat, the useful information we can find is sometimes from "Caused by" clause. 
+- "Caused by" clause provides specific error messages.
+- Also, the blue links on Logcat lead us the locations of error sources.
+

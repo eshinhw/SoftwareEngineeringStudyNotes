@@ -80,4 +80,27 @@ In order to create a layout which looks above using Linear Layout, we have to cr
 - Don't use Expand Horizontally and Expand Vertically features. They are not reliable.
 - The best practice with Constraint Layout is to set each constraint manually.
 
+## Chains and Guidelines
+
+- Chains + 0 widths give views equal widths horizontally.
+- Helpers: Vertical or Horizontal Guidelines
+
+## Buttons
+
+- **Shift + F6** refactors/renames.
+- There are two ways of accessing buttons or views in Kotlin.
+```
+val btnABC = findViewById(R.id.btnABC) # java way
+btnABC # directly imports the id.
+```
+In order to directly import the ids, we need to make sure to have the following lines in build.gradle(module).
+
+```
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+```
+
 

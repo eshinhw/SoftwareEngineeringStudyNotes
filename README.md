@@ -45,7 +45,7 @@ There are different kinds of lifecycle functions in Android with different purpo
 
 ## Logcat: Solving Errors in Android Studio
 
-#### Types of Log Messages
+### Types of Log Messages
 
 - **Verbose (Log.v)**: show all log messages
 - **Debug (Log.d)**: shows all log messages related to Debug and everything else below (Info, Warn, Error and Assert)
@@ -53,7 +53,7 @@ There are different kinds of lifecycle functions in Android with different purpo
 - In similar manner, we can select which types of log messages we want to display on Logcat.
 - We can search log messages by tags to just display what we want.
 
-#### What We Look For in Logcat
+### What We Look For in Logcat
 
 - From Logcat, the useful information we can find is sometimes from "Caused by" clause. 
 - "Caused by" clause provides specific error messages.
@@ -65,7 +65,7 @@ There are different kinds of lifecycle functions in Android with different purpo
   <img width="700" height="400" src="https://user-images.githubusercontent.com/41933169/165412375-7110391a-8af2-4e1b-b7b9-8d43fa9d16e3.png">
 </p>
 
-#### dp and sp
+### dp and sp
 
 **dp or dip**
 > Density-independent Pixels - an abstract unit that is based on the physical density of the screen. These units are relative to a 160 dpi screen, so one dp is one pixel on a 160 dpi screen. The ratio of dp-to-pixel will change with the screen density, but not necessarily in direct proportion. Note: The compiler accepts both "dip" and "dp", though "dp" is more consistent with "sp".

@@ -105,6 +105,10 @@ plugins {
 
 ## Textviews
 
+<p align="center">
+  <img width="500" height="800" src="https://user-images.githubusercontent.com/41933169/165643542-6ddcbecc-0d86-4f7a-9b76-6afc35c35138.png">
+</p>
+
 - textSize: use sp
 - textStyle
 - textAlignment
@@ -112,8 +116,11 @@ plugins {
 
 ## EditText
 
+**Ctrl + Space**: shows all possible options
 - ems: if layout_width == "wrap_content", ems sets how many capital letters can be fitted into EditText (adjusts the length of EditText)
 - hint
+- inputType: if "number", only shows the numeric keyboard. if "textPassword", shows the keyboard for password. if "phone", shows the phone keyboard.
+- 
 
 
 

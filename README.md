@@ -59,3 +59,27 @@ There are different kinds of lifecycle functions in Android with different purpo
 - "Caused by" clause provides specific error messages.
 - Also, the blue links on Logcat lead us the locations of error sources.
 
+## Layout Basics and Linear Layout
+
+<p align="center">
+  <img width="700" height="400" src="https://user-images.githubusercontent.com/41933169/165412375-7110391a-8af2-4e1b-b7b9-8d43fa9d16e3.png">
+</p>
+
+#### dp and sp
+
+dp or dip
+> Density-independent Pixels - an abstract unit that is based on the physical density of the screen. These units are relative to a 160 dpi screen, so one dp is one pixel on a 160 dpi screen. The ratio of dp-to-pixel will change with the screen density, but not necessarily in direct proportion. Note: The compiler accepts both "dip" and "dp", though "dp" is more consistent with "sp".
+
+sp
+> Scaleable Pixels OR scale-independent pixels - this is like the dp unit, but it is also scaled by the user's font size preference. It is recommended you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user's preference. Note, the Android documentation is inconsistent on what sp actually stands for, one doc says "scale-independent pixels", the other says "scaleable pixels".
+
+
+
+In order to create a layout which looks above using Linear Layout, we have to create sub-layouts below the parent layout.
+
+- match_parent vs. wrap_content:
+- layout_weight: When we want to add multiple views in Linear Layout and distribute them equally over the horizon, we can do that by setting layout_weight.
+- padding: 15dp
+- orientation of linear layout: horizontal vs. vertical
+
+

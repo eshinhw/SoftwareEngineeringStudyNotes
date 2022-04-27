@@ -2,7 +2,7 @@
 
 Below contents are basic concepts of Kotlin and Android App Development in Android Studio created by [Philipp Lackner](https://www.youtube.com/channel/UCKNTZMRHPLXfqlbdOI7mCkg) on YouTube. You can find the full video series [here](https://youtube.com/playlist?list=PLQkwcJG4YTCTq1raTb5iMuxnEB06J1VHX).
 
-## 1. Activities and Lifecycle
+## Activities and Lifecycle
 
 Activity in Android is simple Kotlin Class.
     Each activity can be represented by a Kotlin class.
@@ -42,3 +42,42 @@ Android uses an activity stack to manage multiple activities running at the same
 </p>
 
 There are different kinds of lifecycle functions in Android with different purposes.
+
+## Logcat: Solving Errors in Android Studio
+
+### Types of Log Messages
+
+- **Verbose (Log.v)**: show all log messages
+- **Debug (Log.d)**: shows all log messages related to Debug and everything else below (Info, Warn, Error and Assert)
+- **Info (Log.i)**: shows all log messages related to Info and everything else below (Warn, Error, and Assert)
+- In similar manner, we can select which types of log messages we want to display on Logcat.
+- We can search log messages by tags to just display what we want.
+
+### What We Look For in Logcat
+
+- From Logcat, the useful information we can find is sometimes from "Caused by" clause. 
+- "Caused by" clause provides specific error messages.
+- Also, the blue links on Logcat lead us the locations of error sources.
+
+## Layout Basics and Linear Layout
+
+<p align="center">
+  <img width="700" height="400" src="https://user-images.githubusercontent.com/41933169/165412375-7110391a-8af2-4e1b-b7b9-8d43fa9d16e3.png">
+</p>
+
+### dp and sp
+
+**dp or dip**
+> Density-independent Pixels - an abstract unit that is based on the physical density of the screen. These units are relative to a 160 dpi screen, so one dp is one pixel on a 160 dpi screen. The ratio of dp-to-pixel will change with the screen density, but not necessarily in direct proportion. Note: The compiler accepts both "dip" and "dp", though "dp" is more consistent with "sp".
+
+**sp**
+> Scaleable Pixels OR scale-independent pixels - this is like the dp unit, but it is also scaled by the user's font size preference. It is recommended you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user's preference. Note, the Android documentation is inconsistent on what sp actually stands for, one doc says "scale-independent pixels", the other says "scaleable pixels".
+
+In order to create a layout which looks above using Linear Layout, we have to create sub-layouts below the parent layout.
+
+- match_parent vs. wrap_content:
+- layout_weight: When we want to add multiple views in Linear Layout and distribute them equally over the horizon, we can do that by setting layout_weight.
+- padding: 15dp
+- orientation of linear layout: horizontal vs. vertical
+
+

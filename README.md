@@ -43,7 +43,7 @@ Android uses an activity stack to manage multiple activities running at the same
 
 There are different kinds of lifecycle functions in Android with different purposes.
 
-## Solving Errors in Android Studio using Logcat
+## Logcat: Solving Errors in Android Studio
 
 #### Types of Log Messages
 
@@ -67,13 +67,11 @@ There are different kinds of lifecycle functions in Android with different purpo
 
 #### dp and sp
 
-dp or dip
+**dp or dip**
 > Density-independent Pixels - an abstract unit that is based on the physical density of the screen. These units are relative to a 160 dpi screen, so one dp is one pixel on a 160 dpi screen. The ratio of dp-to-pixel will change with the screen density, but not necessarily in direct proportion. Note: The compiler accepts both "dip" and "dp", though "dp" is more consistent with "sp".
 
-sp
+**sp**
 > Scaleable Pixels OR scale-independent pixels - this is like the dp unit, but it is also scaled by the user's font size preference. It is recommended you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user's preference. Note, the Android documentation is inconsistent on what sp actually stands for, one doc says "scale-independent pixels", the other says "scaleable pixels".
-
-
 
 In order to create a layout which looks above using Linear Layout, we have to create sub-layouts below the parent layout.
 

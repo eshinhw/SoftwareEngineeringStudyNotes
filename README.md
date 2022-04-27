@@ -103,4 +103,17 @@ plugins {
 }
 ```
 
+## Textviews
+
+- textSize: use sp
+- textStyle
+- textAlignment
+- **Ctrl + Alt + L**: Rarrange XML attributes (id to the top)
+
+## EditText
+
+- ems: if layout_width == "wrap_content", ems sets how many capital letters can be fitted into EditText (adjusts the length of EditText)
+- hint
+
+
 

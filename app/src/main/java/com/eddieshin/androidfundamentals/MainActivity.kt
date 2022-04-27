@@ -7,6 +7,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main) // R represents resources (res folder)
+        setContentView(R.layout.practice_linearlayout) // R represents resources (res folder)
     }
 }

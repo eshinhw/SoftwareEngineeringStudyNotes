@@ -116,6 +116,10 @@ plugins {
 
 ## EditText
 
+<p align="center">
+  <img width="500" height="800" src="https://user-images.githubusercontent.com/41933169/165645303-fcd870fb-1531-4c0e-a717-968c2a91d0bd.png">
+</p>
+
 **Ctrl + Space**: shows all possible options
 - ems: if layout_width == "wrap_content", ems sets how many capital letters can be fitted into EditText (adjusts the length of EditText)
 - hint

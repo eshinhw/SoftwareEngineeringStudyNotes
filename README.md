@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="800" height="300" src="https://user-images.githubusercontent.com/41933169/165682492-d6620679-6664-469c-93d9-981b3b09b8bc.jpg">
+</p>
+
 # Android Fundamentals
 
 Below contents are basic concepts of Kotlin and Android App Development in Android Studio created by [Philipp Lackner](https://www.youtube.com/channel/UCKNTZMRHPLXfqlbdOI7mCkg) on YouTube. You can find the full video series [here](https://youtube.com/playlist?list=PLQkwcJG4YTCTq1raTb5iMuxnEB06J1VHX).

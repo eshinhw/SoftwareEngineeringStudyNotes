@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="800" height="300" src="https://user-images.githubusercontent.com/41933169/165682492-d6620679-6664-469c-93d9-981b3b09b8bc.jpg">
+  <img width="800" height="400" src="https://user-images.githubusercontent.com/41933169/165682492-d6620679-6664-469c-93d9-981b3b09b8bc.jpg">
 </p>
 
 # Android Fundamentals

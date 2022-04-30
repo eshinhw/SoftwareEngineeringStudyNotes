@@ -1,3 +1,4 @@
+
 # Android Fundamentals
 
 Below contents are basic concepts of Kotlin and Android App Development in Android Studio created by [Philipp Lackner](https://www.youtube.com/channel/UCKNTZMRHPLXfqlbdOI7mCkg) on YouTube. You can find the full video series [here](https://youtube.com/playlist?list=PLQkwcJG4YTCTq1raTb5iMuxnEB06J1VHX).

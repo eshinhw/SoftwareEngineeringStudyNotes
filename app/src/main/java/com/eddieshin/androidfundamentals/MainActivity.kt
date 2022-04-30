@@ -51,4 +51,12 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+    fun imgviewPractice() {
+        setContentView(R.layout.practice_imgview)
+    }
+
+    fun checkboxPractice() {
+        setContentView(R.layout.practice_checkbox)
+    }
 }

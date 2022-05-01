@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import kotlinx.android.synthetic.main.et_calculator.*
 import kotlinx.android.synthetic.main.practice_constraint_layout.*
+import kotlinx.android.synthetic.main.practice_textview.*
 import kotlinx.android.synthetic.main.textview_practice.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // setContentView(R.layout.practice_linearlayout) // R represents resources (res folder)
         // textViewCount() // textView Practice
-        editTextCalculator()
+        practiceEditText()
     }
 
     fun practiceConstraintLayout() {
@@ -30,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun textViewCount() {
-        setContentView(R.layout.textview_practice)
+    fun practiceTextView() {
+        setContentView(R.layout.practice_textview)
         var count = 0
         btnIncrease.setOnClickListener {
             count ++
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun editTextCalculator() {
+    fun practiceEditText() {
         setContentView(R.layout.et_calculator)
 
         btnAdd.setOnClickListener {
@@ -52,11 +53,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun imgviewPractice() {
+    fun practiceImageView() {
         setContentView(R.layout.practice_imgview)
     }
 
-    fun checkboxPractice() {
+    fun practiceCheckBox() {
         setContentView(R.layout.practice_checkbox)
     }
 }

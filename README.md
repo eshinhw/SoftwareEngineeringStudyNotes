@@ -128,7 +128,7 @@ plugins {
 
 ## Intent, Multiple Activities and Sending Data between Them
 
-- We can create Intent() object to go to other activities by running startActivity(intent instance)
+- We can create `Intent()` object to go to other activities by running `startActivity(intent)`
 - When sending data, we use `putExtra` and `getExtra` functions to send data.
 - We can create `data class` to store data and use `Serializable` to send them to other activities.
 

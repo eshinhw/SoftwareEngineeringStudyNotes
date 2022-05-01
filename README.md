@@ -125,7 +125,14 @@ plugins {
 - ems: if layout_width == "wrap_content", ems sets how many capital letters can be fitted into EditText (adjusts the length of EditText)
 - hint
 - inputType: if "number", only shows the numeric keyboard. if "textPassword", shows the keyboard for password. if "phone", shows the phone keyboard.
-- 
+
+## Intent, Multiple Activities and Sending Data between Them
+
+- We can create Intent() object to go to other activities by running startActivity(intent instance)
+- When sending data, we use `putExtra` and `getExtra` functions to send data.
+- We can create data class to store data and use Serializable to send them to other activities.
+
+
 
 
 

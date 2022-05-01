@@ -1,22 +1,41 @@
 package com.eddieshin.androidfundamentals
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import kotlinx.android.synthetic.main.et_calculator.*
+import android.widget.Toast
 import kotlinx.android.synthetic.main.practice_constraint_layout.*
+import kotlinx.android.synthetic.main.practice_edittext.*
+import kotlinx.android.synthetic.main.practice_intent.*
 import kotlinx.android.synthetic.main.practice_textview.*
-import kotlinx.android.synthetic.main.textview_practice.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // setContentView(R.layout.activity_main)
         // setContentView(R.layout.practice_linearlayout) // R represents resources (res folder)
         // textViewCount() // textView Practice
-        practiceEditText()
+        // practiceEditText()
+        // practiceIntent()
+
+        // Intent
+        setContentView(R.layout.practice_intent)
+        btnSubmit.setOnClickListener {
+            val name = etName.text.toString()
+            val age = etAge.text.toString().toInt()
+            val origin = etOrigin.text.toString()
+            val person = Person(name, age, origin)
+            val intent = Intent(this, SubActivity::class.java)
+            intent.putExtra("EXTRA_PERSON", person)
+            startActivity(intent)
+
+        }
     }
+
+
 
     fun practiceConstraintLayout() {
         setContentView(R.layout.practice_constraint_layout)
@@ -42,7 +61,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun practiceEditText() {
-        setContentView(R.layout.et_calculator)
+        setContentView(R.layout.practice_edittext)
 
         btnAdd.setOnClickListener {
             val firstNum = etFirstNumber.text.toString().toInt()
@@ -59,5 +78,11 @@ class MainActivity : AppCompatActivity() {
 
     fun practiceCheckBox() {
         setContentView(R.layout.practice_checkbox)
+    }
+
+    fun practiceIntent() {
+        setContentView(R.layout.practice_intent)
+
+
     }
 }

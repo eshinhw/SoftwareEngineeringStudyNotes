@@ -130,7 +130,7 @@ plugins {
 
 - We can create Intent() object to go to other activities by running startActivity(intent instance)
 - When sending data, we use `putExtra` and `getExtra` functions to send data.
-- We can create data class to store data and use Serializable to send them to other activities.
+- We can create `data class` to store data and use `Serializable` to send them to other activities.
 
 
 

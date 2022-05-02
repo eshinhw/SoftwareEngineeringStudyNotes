@@ -126,11 +126,31 @@ plugins {
 - hint
 - inputType: if "number", only shows the numeric keyboard. if "textPassword", shows the keyboard for password. if "phone", shows the phone keyboard.
 
+## ImageView
+
+- scaleType
+
 ## Intent, Multiple Activities and Sending Data between Them
 
 - We can create `Intent()` object to go to other activities by running `startActivity(intent)`
 - When sending data, we use `putExtra` and `getExtra` functions to send data.
 - We can create `data class` to store data and use `Serializable` to send them to other activities.
+
+## Permissions
+
+- We can ask for permissions to users by stating `uses-permission` in AndroidManifest file.
+- `ActivityCompat.checkSelfPermission(Context: this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED`
+- 
+
+## Implicit Intents
+
+- `Intent(Intent.ACTION_GET_CONTENT).also {it.type = "image/*" startActivityForResult(it, request_code=0)}`
+- `onActivityResult`
+
+## Toolbar Menus
+
+- `onCreateOptionsMenu(menu)` -> `menuInflator.inflate(R.menu.app_our_menu, menu)`
+- `onOptionsItemSelected(item)` -> when(item.itemId)
 
 
 

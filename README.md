@@ -89,20 +89,12 @@ plugins {
 
 ## Textviews
 
-<p align="center">
-  <img width="500" height="800" src="https://user-images.githubusercontent.com/41933169/165643542-6ddcbecc-0d86-4f7a-9b76-6afc35c35138.png">
-</p>
-
 - textSize: use sp
 - textStyle
 - textAlignment
 - **Ctrl + Alt + L**: Rarrange XML attributes (id to the top)
 
 ## EditText
-
-<p align="center">
-  <img width="500" height="800" src="https://user-images.githubusercontent.com/41933169/165645303-fcd870fb-1531-4c0e-a717-968c2a91d0bd.png">
-</p>
 
 **Ctrl + Space**: shows all possible options
 - ems: if layout_width == "wrap_content", ems sets how many capital letters can be fitted into EditText (adjusts the length of EditText)
@@ -134,8 +126,3 @@ plugins {
 
 - `onCreateOptionsMenu(menu)` -> `menuInflator.inflate(R.menu.app_our_menu, menu)`
 - `onOptionsItemSelected(item)` -> when(item.itemId)
-
-
-
-
-

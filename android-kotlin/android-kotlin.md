@@ -11,9 +11,7 @@ Activity in Android is simple Kotlin Class. Thus, each activity can be represent
   <img width="600" height="400" src="https://user-images.githubusercontent.com/41933169/165211141-3708dbb5-fca7-4c0f-b64a-9e5c50631118.png">
 </p>
 
-When there are multiple activities running at the same time, it uses a STACK to manage multiple activities. At the bottom of the STACK, there is FirstActivity. When second activity is initiated, the second activity goes on top of the first activity in the stack.
-
-When an user presses a back button, the current activity gets popped out of the stack, and returns the activity right below the one which just popped.
+When there are multiple activities running at the same time, Android uses a STACK to manage them. The first activity executed goes to the bottom of the STACK and following activities are stacked on top of each other. When an user presses a back button, the current activity gets popped out of the stack, and returns the activity right below it.
 
 <p align="center">
   <img width="1000" height="400" src="https://user-images.githubusercontent.com/41933169/165211071-9a2f7211-c338-4271-b3b2-1a3613d7c768.png">

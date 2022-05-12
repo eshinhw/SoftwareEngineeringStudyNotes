@@ -1,6 +1,6 @@
 # Software Engineering Study Notes
 
-It's a collection of study notes and useful tips on software engineering that I want to keep and remember for references.
+It's a collection of study notes and useful references on Software Engineering.
 
 ## Development Topics
 

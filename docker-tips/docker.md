@@ -7,3 +7,10 @@
 - `docker exec`: run the same container with different shells
 - `docker --name mycontainer`: name the container to mycontainer
 - `docker -it bash`: open an interactive terminal 
+- `docker exec -it pintos bash`
+- `make grade`
+
+## GDB Debugging
+
+- `--gdb`: start debugging
+- `pintos-gdb kernel.o` in build directory:

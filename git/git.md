@@ -1,4 +1,4 @@
-# Basics about Git
+# Git Basics
 
 ## Typical Git Usage
 

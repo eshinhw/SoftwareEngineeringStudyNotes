@@ -144,11 +144,45 @@ plugins {
 - `onCreateOptionsMenu(menu)` -> `menuInflator.inflate(R.menu.app_our_menu, menu)`
 - `onOptionsItemSelected(item)` -> when(item.itemId)
 
+## Fragments
+
+An activity can host one or more fragments inside of it.
+Fragments inside an activity are affected by the life cycle of their activity.
+Using fragments, we don't have to create a whole new activity.
+
+In Fragment class, there are two functions for initialization. 
+
+- `onCreateView` inflates the view of fragment.
+- `onCreate` 
+- `onViewCreated` allows to access all the views within fragment.
+
+Alternatively, we can pass in the id of fragment layout in Fragment().
+
+`class FirstFragment : Fragment(R.layout.fragment_first)`
+
+### Static Fragments
+
+`android:name` allows to set the fragment we want to display.
+
+### Dynamic Fragments
+
+#### Fragment Transaction 
+
+```kotlin
+btnFragment.setOnClickListner{
+  supportFragmentManager.beginTransaction().apply {
+    replace(R.id.flFragment, firstFragment)
+    addToBackStack(null) // navigates back to previous fragment
+    commit()
+  }
+}
+```
 ## Miscellenious Tips
 
 - Refactor/Rename: **Shift + F6**
 - Show all possible options: **Ctrl + Space**
 - Rarrange XML attributes (id to the top): **Ctrl + Alt + L**
+- Duplicate a line: **Ctrl + D**
 
 
 ## References

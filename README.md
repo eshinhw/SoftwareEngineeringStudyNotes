@@ -1,6 +1,6 @@
 # Software Engineering & Development Notes
 
-It's a collection of study notes and useful references on Software Engineering.
+A collection of study notes and useful resources for future references.
 
 ## Study Topics
 

@@ -10,6 +10,10 @@
 - `docker exec -it pintos bash`
 - `make grade`
 
+## Initialize Docker for Projects
+
+`docker run --rm --name pintos -it -v $(pwd):/pintos thierrysans/pintos bash`
+
 ## GDB Debugging
 
 - `--gdb`: start debugging

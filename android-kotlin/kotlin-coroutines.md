@@ -120,8 +120,13 @@ Log.d(TAG, "Requests took $time ms")
 
 ## lifecycleScope and viewModelScope
 
+- `GlobalScope` runs coroutines in global scope over other activities. GlobalScope may cause resource leaks while running in the back when we work on other activities.
+- `lifecycleScope` only lives in the life cycle of the activity where it was initiated.
+- `viewModelScope` only lives as long as the viewModel is alive.
 
+## Coroutines with Firebase Firestore
 
+## Coroutines with Retrofit
 
 ## References
 

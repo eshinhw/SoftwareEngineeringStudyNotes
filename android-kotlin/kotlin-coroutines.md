@@ -85,5 +85,43 @@ runBlocking {
 }
 ```
 
+- `isActive`: check whether the coroutine job is still active.
+- `withTimeout(3000L)`: cancel the job after 3 seconds 
+
+## Async and Await
+
+When there are several suspend functions, they are normally executed in sequence.
+
+`measureTimeMillis`: measure the total time of execution in ms.
+
+```kotlin
+val time = measureTimeMillis {
+    val answer1 = networkCall1()
+    val answer2 = networkCall2()
+
+    Log.d(TAG, "Answer1 is $answer1")
+    Log.d(TAG, "Answer2 is $answer2")
+}
+Log.d(TAG, "Requests took $time ms")
+```
+
+With `Async` and `Await`
+
+```kotlin
+val time = measureTimeMillis {
+    val answer1 = async{ networkCall1() }
+    val answer2 = async{ networkCall2() }
+
+    Log.d(TAG, "Answer1 is $answer1.await()")
+    Log.d(TAG, "Answer2 is $answer2.await()")
+}
+Log.d(TAG, "Requests took $time ms")
+```
+
+## lifecycleScope and viewModelScope
+
+
+
+
 ## References
 

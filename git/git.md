@@ -10,6 +10,10 @@
 Systematically divide up the works with team projects
 backend vs frontend vs database etc
 
+`git checkout -b BRANCH_NAME` creates a new branch and checks out the new branch. 
+
+`git branch BRANCH_NAME` creates a new branch but leaves you on the same branch.
+
 ## Merging vs. Rebasing
 
 There are two methods for bringing code in from other branches into your own

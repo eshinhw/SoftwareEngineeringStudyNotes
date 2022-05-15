@@ -1,4 +1,4 @@
-# Software Engineering & Development Notes
+# Software Engineering & Development Study Notes
 
 A collection of study notes and useful resources for future references.
 

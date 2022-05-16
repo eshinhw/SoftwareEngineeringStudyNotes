@@ -15,5 +15,7 @@
 
 - Works alongside with HTML
 - Used to style web pages to make them look better
-  - change colours, position, effects, font sizes etc
-  - 
+- Change colours, position, effects, font sizes etc
+
+![picture 1](../images/b91592b8e2486410dba91357e3de48ec701fe07dab457446981211358d0ba45d.png)  
+

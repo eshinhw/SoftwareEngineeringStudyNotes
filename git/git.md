@@ -59,3 +59,15 @@ We want to rebase feature branch INTO main branch not the other way around.
 - It can be then reviewed by one or more engineers, where they can provide comments on how to improve it.
 
 
+## Commit Type for Meaningful Commit Messages
+Must be one of the following:
+
+* **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+* **ci**: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+* **docs**: Documentation only changes
+* **feat**: A new feature
+* **fix**: A bug fix
+* **perf**: A code change that improves performance
+* **refactor**: A code change that neither fixes a bug nor adds a feature
+* **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+* **test**: Adding missing tests or correcting existing tests

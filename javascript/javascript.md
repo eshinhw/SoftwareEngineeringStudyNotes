@@ -34,3 +34,15 @@ var a = func.method() ?? "";
 ## Encapsulation in JavaScript
 
 
+## filter method
+
+```javascript
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter((word) => word.length > 6); // only select words which length is greater than 6.
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+```
+
+The original array doesn't change.

@@ -27,6 +27,8 @@ const Home = () => {
 
   const handleDelete = (id) => {
     console.log("delete a blog with id");
+    const newBlogs = blogs.filter((blog) => blog.id != id);
+    setBlogs(newBlogs);
   }
 
   return (
@@ -66,14 +68,23 @@ const BlogList = (props) => {
 export default BlogList;
 ```
 
-## filter method
+## useEffect
+
+`useEffect` runs a function **every render** of the component.
+
+import { useEffect } from 'react';
+
+// doesn't return anything. We pass a function as an argument.
+// Always run once when initial load is occurred.
+useEffect(); 
+
+Dependencies in useEffect
 
 ```javascript
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
-const result = words.filter((word) => word.length > 6); // only select words which length is greater than 6.
-
-console.log(result);
-// expected output: Array ["exuberant", "destruction", "present"]
+useEffect(() => {
+  console.log("use effect ran");
+  console.log(name);
+}, [name]);
 ```
 
+The function provided in `useEffect` runs only when the variable in its dependencies is changed. 
